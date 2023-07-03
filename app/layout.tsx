@@ -1,8 +1,6 @@
-import { Footer, Navbar } from "@/components";
 import "./globals.css";
-import { Inter } from "next/font/google";
 
-const inter = Inter({ subsets: ["latin"] });
+import { Footer, NavBar } from "@components";
 
 export const metadata = {
   title: "KiralaGitsin",
@@ -17,7 +15,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="relative">
-        <Navbar />
+        <NavBar />
         {children}
         <Footer />
       </body>
